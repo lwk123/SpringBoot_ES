@@ -20,7 +20,7 @@ public class EsController {
     public String getBlogInfo() {
         //搜索数据
         GetResponse response = client.prepareGet("people", "man", "1").get();
-        //输出结果
+        //输出结果1
         System.out.println(response.getSourceAsString());
         //关闭client
         client.close();
